@@ -1,5 +1,5 @@
 # TestApi Framework
-TestApi framework is a simple api test framework for beginners. 
+TestApi is a simple api test framework for beginners. 
 It uses a number of open source projects to work properly:
 
   - [Maven](https://maven.apache.org/download.cgi)
