@@ -2,6 +2,11 @@
   
 <suite name="Sample Test Suit" verbose="1" parallel="false">
 
+    <listeners>
+        <listener class-name="com.softhinkers.script.utils.report.listeners.TestListener"/>
+        <listener class-name="com.softhinkers.script.utils.report.listeners.AnnotationTransformer"/>
+    </listeners>
+
   <test name="Test Suite 1" preserve-order="true" verbose="2" >
     <classes>
            <class name="com.softhinkers.script.sanitysuite.SampleTest" />
