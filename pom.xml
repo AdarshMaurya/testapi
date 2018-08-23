@@ -9,11 +9,18 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>test-api</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+
+  <url>https://github.com/AdarshMaurya/testapi</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <testng.version>6.14.3</testng.version>
+    <extent.version>3.1.5</extent.version>
+    <okttp.version>3.11.0</okttp.version>
+    <restassured.version>3.1.1</restassured.version>
+    <log4j.version>1.2.17</log4j.version>
+
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
 
@@ -30,28 +37,35 @@
     <dependency>
       <groupId>com.squareup.okhttp3</groupId>
       <artifactId>okhttp</artifactId>
-      <version>3.11.0</version>
+      <version>${okttp.version}</version>
       <scope>test</scope>
     </dependency>
 
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>6.9.10</version>
+      <version>${testng.version}</version>
       <scope>test</scope>
     </dependency>
 
     <dependency>
       <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
-      <version>3.1.1</version>
+      <version>${restassured.version}</version>
       <scope>test</scope>
     </dependency>
 
     <dependency>
     <groupId>log4j</groupId>
     <artifactId>log4j</artifactId>
-    <version>1.2.17</version>
+    <version>${log4j.version}</version>
+    </dependency>
+
+    <!--Test reporting library - extent 3.X-->
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>${extent.version}</version>
     </dependency>
 
   </dependencies>
@@ -112,4 +126,9 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <organization>
+    <name>Adarsh Maurya</name>
+    <url>https://www.softhinkers.com/</url>
+  </organization>
 </project>
