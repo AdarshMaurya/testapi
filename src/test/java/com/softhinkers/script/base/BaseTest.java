@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Properties;
 
 import com.softhinkers.script.core.BasicAuthInterceptor;
-import com.softhinkers.script.utils.Constants;
 import com.softhinkers.script.utils.ReadTextFile;
 import okhttp3.OkHttpClient;
 import org.apache.log4j.Logger;
@@ -88,20 +87,6 @@ public abstract class BaseTest {
                     e.printStackTrace();
                 }
             }
-        }
-    }
-
-    private void testInvocator(ITestContext context) {
-        //TODO
-        if (urlList != null && urlList.size() > 1) {
-            ITestNGMethod currentTestNGMethod = null;
-            for (ITestNGMethod testNGMethod : context.getAllTestMethods()) {
-                if (testNGMethod.getInstance() == this) {
-                    currentTestNGMethod = testNGMethod;
-                    break;
-                }
-            }
-            currentTestNGMethod.setInvocationCount(urlList.size());
         }
     }
 
