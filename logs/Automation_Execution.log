@@ -1,23 +1,105 @@
-2018-08-23 23:59:19 INFO  MyLogger:42 - Logger is initialized..
-2018-08-23 23:59:19 INFO  MyLogger:19 - Reporting started.
-2018-08-23 23:59:19 INFO  MyLogger:31 - Before class initialized 
-2018-08-23 23:59:19 INFO  MyLogger:25 - Before Method Set Up.
-2018-08-23 23:59:21 INFO  MyLogger:30 - testToFetchFirstName started!
-2018-08-23 23:59:21 INFO  MyLogger:43 - Test to Fetch First Name
-2018-08-23 23:59:21 INFO  MyLogger:44 - Response code 200
-2018-08-23 23:59:21 INFO  MyLogger:37 - testToFetchFirstName passed!
-2018-08-23 23:59:21 INFO  MyLogger:37 - After Method Set Up.
-2018-08-23 23:59:21 INFO  MyLogger:25 - Before Method Set Up.
-2018-08-23 23:59:21 INFO  MyLogger:30 - testToFetchLastName started!
-2018-08-23 23:59:21 INFO  MyLogger:53 - Test To Fetch Last Name
-2018-08-23 23:59:21 INFO  MyLogger:54 - Response code 200
-2018-08-23 23:59:21 INFO  MyLogger:43 - testToFetchLastName failed!
-2018-08-23 23:59:21 INFO  MyLogger:37 - After Method Set Up.
-2018-08-23 23:59:21 INFO  MyLogger:25 - Before Method Set Up.
-2018-08-23 23:59:21 INFO  MyLogger:30 - testToFetchStateName started!
-2018-08-23 23:59:21 INFO  MyLogger:61 - Test To Fetch Last Name
-2018-08-23 23:59:21 INFO  MyLogger:62 - Response code 200
-2018-08-23 23:59:21 INFO  MyLogger:37 - testToFetchStateName passed!
-2018-08-23 23:59:21 INFO  MyLogger:37 - After Method Set Up.
-2018-08-23 23:59:21 INFO  MyLogger:76 - After class tear down initialized
-2018-08-23 23:59:22 INFO  MyLogger:24 - Reporting finished.
+2018-08-24 07:55:00 INFO  MyLogger:49 - Logger is initialized..
+2018-08-24 07:55:00 INFO  MyLogger:19 - Reporting started.
+2018-08-24 07:55:00 INFO  MyLogger:38 - Before class initialized 
+2018-08-24 07:55:00 INFO  MyLogger:23 - Before Method Set Up.
+2018-08-24 07:55:01 INFO  MyLogger:30 - testToFetchFirstName started!
+2018-08-24 07:55:01 INFO  MyLogger:40 - Test to Fetch First Name: 200
+2018-08-24 07:55:01 INFO  MyLogger:37 - testToFetchFirstName passed!
+2018-08-24 07:55:01 INFO  MyLogger:34 - After Method Set Up.
+2018-08-24 07:55:01 INFO  MyLogger:23 - Before Method Set Up.
+2018-08-24 07:55:02 INFO  MyLogger:30 - testToFetchLastName started!
+2018-08-24 07:55:02 INFO  MyLogger:47 - Test To Fetch Last Name: 200
+2018-08-24 07:55:02 INFO  MyLogger:48 - Response code 
+2018-08-24 07:55:02 INFO  MyLogger:43 - testToFetchLastName failed!
+2018-08-24 07:55:02 INFO  MyLogger:34 - After Method Set Up.
+2018-08-24 07:55:02 INFO  MyLogger:23 - Before Method Set Up.
+2018-08-24 07:55:02 INFO  MyLogger:30 - testToFetchStateName started!
+2018-08-24 07:55:02 INFO  MyLogger:55 - Test To Fetch Last Name200
+2018-08-24 07:55:02 INFO  MyLogger:37 - testToFetchStateName passed!
+2018-08-24 07:55:02 INFO  MyLogger:34 - After Method Set Up.
+2018-08-24 07:55:02 INFO  MyLogger:110 - After class tear down initialized
+2018-08-24 07:55:02 INFO  MyLogger:24 - Reporting finished.
+2018-08-24 07:55:03 INFO  MyLogger:19 - Reporting started.
+2018-08-24 07:55:03 INFO  MyLogger:38 - Before class initialized 
+2018-08-24 07:55:03 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:03 INFO  MyLogger:30 - testToFetchLastName started!
+2018-08-24 07:55:03 INFO  MyLogger:37 - testToFetchLastName passed!
+2018-08-24 07:55:03 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:03 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:03 INFO  MyLogger:30 - testToFetchLastName started!
+2018-08-24 07:55:03 INFO  MyLogger:37 - testToFetchLastName passed!
+2018-08-24 07:55:03 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:03 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:03 INFO  MyLogger:30 - testToFetchLastName started!
+2018-08-24 07:55:03 INFO  MyLogger:37 - testToFetchLastName passed!
+2018-08-24 07:55:03 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:03 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:03 INFO  MyLogger:30 - testToFetchLastName started!
+2018-08-24 07:55:04 INFO  MyLogger:37 - testToFetchLastName passed!
+2018-08-24 07:55:04 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:04 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:04 INFO  MyLogger:30 - testToFetchLastName started!
+2018-08-24 07:55:04 INFO  MyLogger:37 - testToFetchLastName passed!
+2018-08-24 07:55:04 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:04 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:04 INFO  MyLogger:30 - testToFetchLastName started!
+2018-08-24 07:55:04 INFO  MyLogger:37 - testToFetchLastName passed!
+2018-08-24 07:55:04 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:04 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:04 INFO  MyLogger:30 - testToFetchLastName started!
+2018-08-24 07:55:05 INFO  MyLogger:37 - testToFetchLastName passed!
+2018-08-24 07:55:05 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:05 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:05 INFO  MyLogger:30 - testToFetchLastName started!
+2018-08-24 07:55:05 INFO  MyLogger:37 - testToFetchLastName passed!
+2018-08-24 07:55:05 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:05 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:05 INFO  MyLogger:30 - testToFetchLastName started!
+2018-08-24 07:55:05 INFO  MyLogger:37 - testToFetchLastName passed!
+2018-08-24 07:55:05 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:05 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:05 INFO  MyLogger:30 - testToFetchLastName started!
+2018-08-24 07:55:06 INFO  MyLogger:37 - testToFetchLastName passed!
+2018-08-24 07:55:06 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:06 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:06 INFO  MyLogger:30 - testToFetchStateName started!
+2018-08-24 07:55:06 INFO  MyLogger:37 - testToFetchStateName passed!
+2018-08-24 07:55:06 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:06 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:06 INFO  MyLogger:30 - testToFetchStateName started!
+2018-08-24 07:55:06 INFO  MyLogger:37 - testToFetchStateName passed!
+2018-08-24 07:55:06 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:06 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:06 INFO  MyLogger:30 - testToFetchStateName started!
+2018-08-24 07:55:07 INFO  MyLogger:37 - testToFetchStateName passed!
+2018-08-24 07:55:07 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:07 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:07 INFO  MyLogger:30 - testToFetchStateName started!
+2018-08-24 07:55:07 INFO  MyLogger:37 - testToFetchStateName passed!
+2018-08-24 07:55:07 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:07 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:07 INFO  MyLogger:30 - testToFetchStateName started!
+2018-08-24 07:55:07 INFO  MyLogger:37 - testToFetchStateName passed!
+2018-08-24 07:55:07 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:07 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:07 INFO  MyLogger:30 - testToFetchStateName started!
+2018-08-24 07:55:08 INFO  MyLogger:37 - testToFetchStateName passed!
+2018-08-24 07:55:08 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:08 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:08 INFO  MyLogger:30 - testToFetchStateName started!
+2018-08-24 07:55:08 INFO  MyLogger:37 - testToFetchStateName passed!
+2018-08-24 07:55:08 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:08 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:08 INFO  MyLogger:30 - testToFetchStateName started!
+2018-08-24 07:55:08 INFO  MyLogger:37 - testToFetchStateName passed!
+2018-08-24 07:55:08 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:08 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:08 INFO  MyLogger:30 - testToFetchStateName started!
+2018-08-24 07:55:08 INFO  MyLogger:37 - testToFetchStateName passed!
+2018-08-24 07:55:08 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:08 INFO  MyLogger:26 - Before Method Set Up.
+2018-08-24 07:55:08 INFO  MyLogger:30 - testToFetchStateName started!
+2018-08-24 07:55:09 INFO  MyLogger:37 - testToFetchStateName passed!
+2018-08-24 07:55:09 INFO  MyLogger:60 - After Method Set Up.
+2018-08-24 07:55:09 INFO  MyLogger:110 - After class tear down initialized
+2018-08-24 07:55:09 INFO  MyLogger:24 - Reporting finished.
