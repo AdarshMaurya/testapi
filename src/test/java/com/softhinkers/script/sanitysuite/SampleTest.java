@@ -11,8 +11,6 @@ import java.io.IOException;
 
 import static com.softhinkers.script.utils.Constants.TEST_FOO;
 import static com.softhinkers.script.utils.XmlParser.checkXml;
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
 public class SampleTest extends BaseTest {
@@ -29,7 +27,6 @@ public class SampleTest extends BaseTest {
             fail("Response code " + response.code());
             return;
         }
-
     }
 
     @AfterMethod
@@ -40,26 +37,22 @@ public class SampleTest extends BaseTest {
 
     @Test(priority = 1, description = "Test to Fetch First Name")
     public void testToFetchFirstName() throws IOException {
-        log.info("Test to Fetch First Name");
-        log.info("Response code " + response.code());
+        log.info("Test to Fetch First Name: " + response.code());
         String xml = response.body().string();
         checkXml(xml,"firstname", "sample_name");
-
-        // }
     }
 
     @Test(priority = 1, description = "Test To Fetch Last Name")
     public void testToFetchLastName() throws IOException {
-        log.info("Test To Fetch Last Name");
-        log.info("Response code " + response.code());
+        log.info("Test To Fetch Last Name: " + response.code());
+        log.info("Response code " );
         String xml = response.body().string();
         checkXml(xml,"lastname", "sample_names");
     }
 
     @Test(priority = 1, description = "Test To Fetch State Name")
     public void testToFetchStateName() throws IOException {
-        log.info("Test To Fetch Last Name");
-        log.info("Response code " + response.code());
+        log.info("Test To Fetch Last Name" + response.code());
         String xml = response.body().string();
         checkXml(xml,"state", "sample_state_name");
     }
