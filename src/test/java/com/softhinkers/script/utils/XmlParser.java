@@ -24,8 +24,12 @@ public class XmlParser {
             assertEquals(expectedValue, actualValue);
         } catch (Exception e) {
             e.printStackTrace();
-            fail(e.toString());
+            fail("XML Parsing error" + "\n" + e.toString());
         }
+    }
+
+    public static void validateXml(String xml, String tagsToCheck, String expectedValue) {
+        //TODO
     }
 
     private static String getString(String tagName, Element element) {
