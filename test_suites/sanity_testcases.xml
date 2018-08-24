@@ -4,7 +4,8 @@
 
     <listeners>
         <listener class-name="com.softhinkers.script.utils.report.listeners.TestListener"/>
-        <listener class-name="com.softhinkers.script.utils.report.listeners.AnnotationTransformer"/>
+        <listener class-name="com.softhinkers.script.utils.report.listeners.RetryAnnotationTransformer"/>
+        <listener class-name="com.softhinkers.script.utils.report.listeners.SetInvocationTransformer"/>
     </listeners>
 
   <test name="Test Suite 1" preserve-order="true" verbose="2" >
@@ -13,7 +14,7 @@
     </classes>
   </test>
 
-  <test name="Test Suite 2" preserve-order="true" verbose="1" >
+  <test name="Test Suite 2" preserve-order="true" verbose="2" >
     <classes>
            <class name="com.softhinkers.script.sanitysuite.SampleTest2" />
     </classes>
