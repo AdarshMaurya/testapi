@@ -3,12 +3,17 @@ package com.softhinkers.script.base;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
 
 import com.softhinkers.script.core.BasicAuthInterceptor;
+import com.softhinkers.script.utils.Constants;
+import com.softhinkers.script.utils.ReadTextFile;
 import okhttp3.OkHttpClient;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
+import org.testng.ITestContext;
+import org.testng.ITestNGMethod;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -17,17 +22,19 @@ public abstract class BaseTest {
     private static boolean isInitalized = false;
     public static Logger log = null;
     public static OkHttpClient client = null;
+    public static List<String> urlList = null;
 
     protected BaseTest() {
         if (!isInitalized) {
             initLogs();
             initConfig();
+            initUrlFromEndPointFile();
             initClient();
         }
     }
 
     @BeforeClass
-    public void setup () {
+    public void setup() {
         log.info("Before class initialized ");
     }
 
@@ -67,12 +74,39 @@ public abstract class BaseTest {
                     .build();
         } catch (Exception e) {
             e.printStackTrace();
-            System.exit(0);
+        }
+    }
+
+    private static void initUrlFromEndPointFile() {
+        if ("true".equals(config.getProperty("urlEndPoints")) && config.getProperty("urlEndPoints") != null) {
+            if (urlList == null) {
+                try {
+                    String config_fileName = "urlEndPoints.txt";
+                    String config_path = System.getProperty("user.dir") + File.separator + "config" + File.separator + config_fileName;
+                    urlList = new ReadTextFile(config_path).getListUrlString();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    private void testInvocator(ITestContext context) {
+        //TODO
+        if (urlList != null && urlList.size() > 1) {
+            ITestNGMethod currentTestNGMethod = null;
+            for (ITestNGMethod testNGMethod : context.getAllTestMethods()) {
+                if (testNGMethod.getInstance() == this) {
+                    currentTestNGMethod = testNGMethod;
+                    break;
+                }
+            }
+            currentTestNGMethod.setInvocationCount(urlList.size());
         }
     }
 
     @AfterClass
-    public void teardown () {
+    public void teardown() {
         log.info("After class tear down initialized");
     }
 
