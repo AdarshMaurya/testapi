@@ -12,12 +12,12 @@
            <class name="com.softhinkers.script.sanitysuite.SampleTest" />
     </classes>
   </test>
-  
- <!-- test name="Test Suite 2" preserve-order="true" verbose="2" >
+
+  <test name="Test Suite 2" preserve-order="true" verbose="1" >
     <classes>
            <class name="com.softhinkers.script.sanitysuite.SampleTest2" />
     </classes>
-  </test-->
+  </test>
   
    
 </suite>
